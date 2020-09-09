@@ -1,0 +1,43 @@
+{
+  "name": "api_crud_ts",
+  "version": "1.0.0",
+  "description": "Simple API_REST with TS and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "ts": "tsc -W",
+    "dev1": "nodemon dist/index.js",
+    "dev": "nodemon -e ts --exec \"npm run buildrun\"",
+    "build": "tsc",
+    "buildrun": "npm run build && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor1890/API_CRUD_TS.git"
+  },
+  "keywords": [
+    "ts",
+    "js",
+    "mongodb",
+    "express",
+    "api_rest"
+  ],
+  "author": "Victor Rosario <victorrosariodeveloper@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Victor1890/API_CRUD_TS/issues"
+  },
+  "homepage": "https://github.com/Victor1890/API_CRUD_TS#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.0",
+    "bcrypt": "^5.0.0",
+    "mongoose": "^5.10.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/hapi__hapi": "^20.0.0",
+    "@types/mongoose": "^5.7.36",
+    "@types/node": "^14.6.4",
+    "nodemon": "^2.0.4",
+    "typescript": "^4.0.2"
+  }
+}
